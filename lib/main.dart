@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
-                mainAxisAlignment: MainAxisAlignment.start, // spaceEvenly
+                mainAxisAlignment: MainAxisAlignment.center, // spaceEvenly
                 children: <Widget>[
               CircleAvatar(
                 radius: 50,
@@ -41,45 +41,36 @@ class MyApp extends StatelessWidget {
                   ),
                   // padding: EdgeInsets.all(10),
                   child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Row(
-                      children: <Widget>[
-                        Icon(Icons.phone, color: Colors.teal),
-                        SizedBox(width: 10),
-                        Text(
+                    padding: const EdgeInsets.all(0.0),
+                    child: ListTile(
+                        leading: Icon(Icons.phone, color: Colors.teal),
+                        title: Text(
                           '+90 542 498 20 95',
                           style: TextStyle(
                             color: Colors.teal.shade900,
                             fontFamily: 'Source Code Pro',
                             fontSize: 14.0,
                           ),
-                        ),
-                      ],
-                    ),
+                        )),
                   )),
               Card(
                 color: Colors.white,
                 // padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
                 child: Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        color: Colors.teal,
+                  padding: EdgeInsets.all(0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "ozgur@metmanis.com",
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Code Pro',
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        "ozgur@metmanis.com",
-                        style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'Source Code Pro',
-                        ),
-                      )
-                    ],
+                    ),
                   ),
                 ),
               ),
