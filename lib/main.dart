@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage('images/profile.png'),
               ),
               Text("Özgür Sarıkamış", style: TextStyle(
+                fontFamily: "Pacifico",
                 fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold
               ))
               ]
